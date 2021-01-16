@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>
+I.S. KHODIYAR TOUR
+</title>
+<link type="text/css" href="style.css" rel="stylesheet">
+<script>
+   var count=1;
+   var count1=1;
+</script>
+<script>
+	function change11(){
+	if(count<55)
+    count=count+1;
+    document.getElementById('image').src="MANDIR/"+count+'.jpg';
+	document.getElementById('i').href="MANDIR/"+count+'.jpg';
+	}
+	function change21(){
+	if(count1<34)
+    count1=count1+1;
+    document.getElementById('image1').src="YATRA/"+count1+'.jpg';
+	document.getElementById('i1').href="YATRA/"+count1+'.jpg';
+	}
+</script>
+<script>
+function change12(){
+    if(count>1)
+    count=count-1;
+    document.getElementById('image').src="MANDIR/"+count+'.jpg';
+	document.getElementById('i').href="MANDIR/"+count+'.jpg';
+	}
+	function change22(){
+    if(count1>1)
+    count1=count1-1;
+    document.getElementById('image1').src="YATRA/"+count1+'.jpg';
+	document.getElementById('i1').href="YATRA/"+count1+'.jpg';
+	}
+	
+</Script>
+</head>
+<body style="background-image:url('back.jpg');">
+<H1 style="color:white" align="CENTER">KHODIYAR MATA DARSHAN</h1>
+<p align="center"><img src="1.jpg"  height="400px" width="800px"></p>
+<p align="center"><img src="2.jpg"  height="400px" width="800px"></p>
+<p align="center"><img src="3.jpg"  height="400px" width="800px"></p>
+<p align="center"><img src="4.jpg"  height="400px" width="800px"></p>
+<h2>
+<p align="center">
+<table>
+<tr>
+<div class="box" style="border-bottom-style:solid;color:red;overflow-x: none;">
+<h2 align="center">MATIBHA PARIVAR</h2>
+
+</div>
+</tr>
+<tr>
+
+<div class="box" style="height:830px;width:620px;padding:10px">
+<h2 style="color:pink">મંદિરમાં દર્શન</h2>
+<div class="gallery" style="width:600px">
+   <img  id="image" src="MANDIR/1.jpg" height="600" width="600">
+   <div class="desc">
+   <a id="i" href="MANDIR/1.jpg" download>
+    DOWNLOAD
+</a>
+   </div>
+   
+</div>
+
+<input type="button" onclick="change12()" value="PREV" class="button"> 
+<input type="button" onclick="change11()" value="NEXT" class="button"> 
+</div>
+</div>
+
+
+<tr>
+<div class="box" style="height:830px;width:620px;padding:10px">
+<h2 style="color:pink">યાત્રા</h2>
+<div class="gallery" style="width:600px">
+   <img  id="image1" src="YATRA/1.jpg" height="600" width="600">
+   <div class="desc">
+   <a id="i1" href="YATRA/1.jpg" download>
+    DOWNLOAD
+</a>
+   </div>
+   
+</div>
+
+<input type="button" onclick="change22()" value="PREV" class="button"> 
+<input type="button" onclick="change21()" value="NEXT" class="button"> 
+</div>
+
+</div>
+</P>
+
+</tr>
+
+
+</table>
+</h2>
+</body>
+</html>
